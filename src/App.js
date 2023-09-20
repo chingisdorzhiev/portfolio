@@ -9,7 +9,7 @@ import HeaderContainer from "./Components/Structure/Header/HeaderContainer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Provider store={store}>
         <div className="App">
           <ScrollToTop />
