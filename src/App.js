@@ -9,7 +9,7 @@ import HeaderContainer from "./Components/Structure/Header/HeaderContainer";
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <HashRouter base="/">
       <Provider store={store}>
         <div className="App">
           <ScrollToTop />
