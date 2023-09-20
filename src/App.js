@@ -9,15 +9,13 @@ import HeaderContainer from "./Components/Structure/Header/HeaderContainer";
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
-      <Provider store={store}>
-        <div className="App">
-          <ScrollToTop />
-          <HeaderContainer />
-          <Body />
-        </div>
-      </Provider>
-    </HashRouter>
+    <Provider store={store}>
+      <div className="App">
+        <ScrollToTop />
+        <HeaderContainer />
+        <Body />
+      </div>
+    </Provider>
   );
 }
 
