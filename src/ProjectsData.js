@@ -21,7 +21,7 @@ export const projects = [
     ],
     image: "Portfolio",
     github: "https://github.com/chingisdorzhiev/chingisdorzhiev",
-    link: "https://chingisdorzhiev.github.io/chingisdorzhiev/",
+    link: "https://chingisdorzhiev.github.io/",
   },
   {
     name: "Quiz App",
