@@ -1,0 +1,133 @@
+.aboutContainer {
+  box-sizing: border-box;
+  padding: 5vh;
+  padding-top: 20vh;
+  height: 100vh;
+
+  position: sticky;
+  top: 0;
+
+  font-family: "Ubuntu", sans-serif;
+  user-select: none;
+
+  transition: 2s;
+}
+
+.textBox {
+  width: 50%;
+  height: 80%;
+
+  margin-left: 3vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.textBox * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.textBox h1 {
+  margin-left: 3vw;
+  font-weight: bold;
+
+  font-size: calc((100vw - 30rem) / (80 - 30) * (2.5 - 1.5) + 1.5rem);
+}
+
+.textBox h3 {
+  margin-left: 3vw;
+  font-weight: bold;
+
+  font-size: calc((100vw - 30rem) / (80 - 30) * (2.5 - 1.5) + 1.5rem);
+}
+
+.textBox p {
+  font-family: "Open Sans", sans-serif;
+  font-size: calc((100vw - 30rem) / (80 - 30) * (1.25 - 0.75) + 0.75rem);
+}
+
+.textBox h2 {
+  font-weight: 900;
+  font-size: calc((100vw - 30rem) / (80 - 30) * (8 - 5) + 5rem);
+  line-height: calc((100vw - 30rem) / (80 - 30) * (8 - 5) + 5rem);
+  color: transparent;
+  -webkit-text-stroke: 0.1rem white;
+  /* background: url(./../../../Images/back.png); */
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+.btnContainer {
+  margin-left: 3vw;
+  /* border: 1px solid blue; */
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+/* light theme */
+
+.lightTheme {
+  background: linear-gradient(to left top, #75c9b7, #abd699);
+  color: white;
+}
+
+.lightTheme h1 {
+  color: #16123f;
+}
+
+.lightTheme h3 {
+  color: #16123f;
+}
+
+/* dark theme */
+
+.darkTheme {
+  background-color: #16123f;
+}
+
+.darkTheme h1 {
+  color: #ffe26a;
+}
+
+.darkTheme h3 {
+  color: #ffe26a;
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutContainer {
+    padding: 0;
+    padding-top: 20vh;
+
+    display: flex;
+    /* align-items: center; */
+  }
+
+  .textBox {
+    /* border: 1px solid red; */
+
+    margin: 0;
+
+    height: 40%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .textBox h1,
+  h3,
+  .btnContainer {
+    margin: 0;
+  }
+}

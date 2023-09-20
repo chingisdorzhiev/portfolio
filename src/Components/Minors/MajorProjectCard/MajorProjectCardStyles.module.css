@@ -1,0 +1,141 @@
+.majorCard {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5%;
+  padding-top: 12vh;
+
+  display: grid;
+  grid-template-areas: "info img" "btn img";
+
+  border-bottom: 2px solid white;
+  scroll-snap-align: initial;
+
+  transition: 2s;
+}
+
+.section {
+  width: 40vw;
+}
+
+.infoSection {
+  grid-area: info;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.infoSection h1 {
+  margin: 0;
+  margin-bottom: 3%;
+}
+
+.infoSection ul {
+  width: 100%;
+}
+
+.infoSection ul li {
+  margin: 1% 5%;
+}
+
+.imgSection {
+  grid-area: img;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnSection {
+  grid-area: btn;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
+
+.majorCard img {
+  box-sizing: border-box;
+
+  max-height: 85%;
+  max-width: 85%;
+
+  object-fit: contain;
+  object-position: center;
+
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+/* light theme */
+
+.lightTheme h1 {
+  color: white;
+}
+
+/* dark theme */
+
+.darkTheme {
+  color: white;
+}
+
+.darkTheme h1 {
+  color: #ffe26a;
+}
+
+.darkTheme p {
+  color: white;
+}
+
+/* devices */
+
+@media screen and (max-width: 1000px) {
+  .majorCard {
+    grid-template-areas: "info" "img" "btn";
+    grid-template-rows: 1fr 4fr 1fr;
+  }
+
+  .section {
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .infoSection {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .infoSection div {
+    padding: 5%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infoSection div:first-child {
+    width: 70%;
+  }
+
+  .infoSection div:last-child {
+    width: 30%;
+  }
+
+  .infoSection h1 {
+    margin-bottom: 5%;
+  }
+
+  .majorCard img {
+    max-height: 45vh;
+    max-width: 80vw;
+  }
+}

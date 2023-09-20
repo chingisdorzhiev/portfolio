@@ -1,0 +1,88 @@
+.mainProjectContainer {
+  box-sizing: border-box;
+  width: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  display: inline-block;
+
+  position: absolute;
+  z-index: 1;
+
+  border: solid;
+  border-width: 0 0.25rem 0.25rem 0;
+  padding: 0.5rem;
+
+  cursor: pointer;
+}
+
+.arrow:hover {
+  filter: brightness(200%);
+}
+
+.arrow:active {
+  filter: brightness(90%);
+}
+
+.leftArrow {
+  transform: rotate(135deg);
+  left: 10%;
+}
+
+.rightArrow {
+  transform: rotate(-45deg);
+  right: 10%;
+}
+
+.carouselContainer {
+  box-sizing: border-box;
+
+  width: 100%;
+  overflow-x: hidden;
+
+  white-space: nowrap;
+  cursor: grab;
+
+  scroll-behavior: smooth;
+}
+
+.dragging {
+  scroll-behavior: auto;
+  cursor: grabbing;
+}
+
+.hiddenArrow {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .mainProjectContainer {
+    width: 100%;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .mainProjectContainer {
+    width: 100%;
+  }
+}
+
+/* light theme */
+
+.lightTheme .arrow {
+  border-color: #16123f;
+}
+
+/* dark theme */
+
+.darkTheme .arrow {
+  border-color: white;
+}

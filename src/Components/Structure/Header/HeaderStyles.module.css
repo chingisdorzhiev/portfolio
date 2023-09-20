@@ -1,0 +1,167 @@
+.navContainer {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 0;
+
+  position: relative;
+}
+
+.header {
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 10vh;
+
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  font-weight: 400;
+  color: white;
+
+  transition: all 0.5s ease-out;
+
+  user-select: none;
+}
+
+.headerColored {
+  background: rgb(27, 27, 27, 0.5);
+  transition: all 0.5s ease-out;
+}
+
+.block {
+  height: 100%;
+  width: 25%;
+  font-size: calc((100vw - 30rem) / (80 - 30) * (1.25 - 0.75) + 0.75rem);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.block h1 {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.center h1 {
+  font-size: 1.5rem;
+}
+
+.link {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: white;
+  color: white;
+
+  height: calc((100vw - 30rem) / (80 - 30) * (1.25 - 0.75) + 0.75rem);
+}
+
+.decoratedLink::after {
+  content: "";
+  width: 0;
+
+  position: absolute;
+  left: 50%;
+  bottom: -40%;
+
+  height: calc((100vw - 30rem) / (80 - 30) * (0.15 - 0.1) + 0.1rem);
+
+  background: white;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+
+  border-radius: 20%;
+}
+
+.decoratedLink:hover::after {
+  width: 100%;
+}
+
+/* mobile navbar */
+
+.mobileNav {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  height: 100vh;
+  width: 100%;
+
+  position: fixed;
+  top: 10vh;
+  left: -100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: rgb(27, 27, 27, 0.5);
+
+  transition: ease-in-out 0.5s;
+}
+
+.mobileNav .link {
+  height: 10vh;
+  width: 30vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+
+  font-size: 2rem;
+}
+
+.mobileNav strong {
+  font-size: 1.25rem;
+  transition: 0.2s;
+}
+
+.mobileNav strong:hover {
+  color: #ffe26a;
+}
+
+.navMenu {
+  display: none;
+}
+
+.navBtn {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  cursor: pointer;
+}
+
+.navBtn img {
+  margin: 0;
+  height: 30px;
+}
+
+.checkBtn {
+  display: none;
+}
+
+.block input:checked ~ .mobileNav {
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    display: none;
+  }
+
+  .navMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

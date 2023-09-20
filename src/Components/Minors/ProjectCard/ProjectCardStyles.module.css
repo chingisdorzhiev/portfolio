@@ -1,0 +1,196 @@
+.card {
+  box-sizing: border-box;
+  margin: calc(10% / 8);
+
+  height: 25vw;
+  width: calc(90% / 4);
+
+  border: 2px solid white;
+  border-radius: 1vw;
+
+  display: inline-block;
+
+  overflow: hidden;
+  position: relative;
+
+  user-select: none;
+  will-change: transform;
+  transition: all ease-in-out 0.5s;
+}
+
+.imgContainer {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 2s;
+}
+
+.card img {
+  box-sizing: border-box;
+
+  max-height: 90%;
+  max-width: 85%;
+
+  object-fit: contain;
+  object-position: center;
+
+  border: 1px solid white;
+  border-radius: 2vh;
+}
+
+.intro {
+  box-sizing: border-box;
+  bottom: -17.5vh;
+
+  height: 25vh;
+  width: 100%;
+
+  position: absolute;
+
+  color: white;
+  transition: all 0.5s ease-out;
+  white-space: normal;
+
+  background: rgb(27, 27, 27, 0.25);
+
+  transition: all ease-in-out 0.5s;
+}
+
+.card h1 {
+  margin: 0;
+  height: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.card p {
+  padding: 5%;
+  margin: 0;
+
+  height: 60%;
+
+  font-size: 1rem;
+  color: white;
+  cursor: default;
+}
+
+.card span {
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: scale(105%);
+}
+
+.intro:hover {
+  bottom: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .card {
+    margin-left: calc(5% / 3);
+    margin-right: calc(5% / 3);
+
+    width: calc(90% / 3);
+  }
+
+  .card h1 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.75rem;
+  }
+
+  .intro {
+    bottom: -14vh;
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    margin-left: calc(5% / 2);
+    margin-right: calc(5% / 2);
+
+    height: 40vh;
+    width: calc(90% / 2);
+
+    border-radius: 2vw;
+  }
+
+  .card h1 {
+    height: 40%;
+    font-size: 1.5rem;
+  }
+
+  .intro {
+    bottom: -12vh;
+    height: 20vh;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .card {
+    margin-left: calc(10%);
+    margin-right: calc(10%);
+
+    height: 50vh;
+    width: calc(80%);
+    border-radius: 2vh;
+  }
+
+  .card h1 {
+    height: 40%;
+    font-size: 1.25rem;
+  }
+
+  .card p {
+    font-size: 0.75rem;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .intro {
+    bottom: -15vh;
+    height: 25vh;
+  }
+}
+
+/* light theme */
+
+.lightTheme {
+  background-color: rgba(134, 132, 132, 0.993);
+}
+
+.lightTheme .imgContainer {
+  background-color: #ffe16ad7;
+}
+
+.lightTheme .intro:hover {
+  background: #16123f;
+}
+
+/* dark theme */
+
+.darkTheme p {
+  color: #16123f;
+}
+
+.darkTheme .intro:hover {
+  background: #ffe26a;
+}
