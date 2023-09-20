@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Body from "./Components/Structure/Body/Body";
 import ScrollToTop from "./Components/ScrollTop";
 import { Provider } from "react-redux";
@@ -9,7 +9,7 @@ import HeaderContainer from "./Components/Structure/Header/HeaderContainer";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename="/">
       <Provider store={store}>
         <div className="App">
           <ScrollToTop />
@@ -17,7 +17,7 @@ function App() {
           <Body />
         </div>
       </Provider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
