@@ -10,9 +10,9 @@ function Body(props) {
     <div className={styles.body}>
       <div>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutContainer />} />
-          <Route path="/projects" element={<MyProjectsContainer />} />
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/about" element={<AboutContainer />} />
+          <Route exact path="/projects" element={<MyProjectsContainer />} />
         </Routes>
       </div>
     </div>

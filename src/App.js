@@ -5,6 +5,7 @@ import ScrollToTop from "./Components/ScrollTop";
 import { Provider } from "react-redux";
 import store from "./Redux/reduxStore";
 import HeaderContainer from "./Components/Structure/Header/HeaderContainer";
+import { HashRouter } from "react-router-dom";
 
 function App() {
   return (
