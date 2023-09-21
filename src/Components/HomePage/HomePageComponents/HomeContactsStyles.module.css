@@ -22,11 +22,6 @@
   align-items: center;
 
   transition: 2s;
-
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-
-  /* border: 1px solid red; */
 }
 
 .homeContacts h3 {
@@ -41,8 +36,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-
-  /* border: 1px solid red; */
 }
 
 .contactInfo {
@@ -105,19 +98,3 @@
     height: 30%;
   }
 }
-
-/* @media screen and (max-width: 768px) {
-  .homeContacts {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .contactBlock {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    width: 90%;
-  }
-  .contactInfo {
-    height: 40%;
-  }
-} */
