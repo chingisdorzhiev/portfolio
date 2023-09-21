@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import styles from "./../Body/BodyStyles.module.css";
 import HomePage from "./../../HomePage/HomePage";
 import MyProjectsContainer from "./../../MyProjects/MyProjectsContainer";
@@ -9,8 +9,8 @@ function Body(props) {
   return (
     <div className={styles.body}>
       <div>
-        <Routes basename="/chingisdorzhiev">
-          <Route path="/" element={<HomePage />} />
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutContainer />} />
           <Route path="/projects" element={<MyProjectsContainer />} />
         </Routes>
