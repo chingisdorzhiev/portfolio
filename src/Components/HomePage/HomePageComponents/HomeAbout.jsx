@@ -18,7 +18,6 @@ function HomeAbout(props) {
             <CustomBtn color="yellow" text="About me" />
           </NavLink>
         </div>
-        <div>sadsad</div>
       </div>
     </div>
   );

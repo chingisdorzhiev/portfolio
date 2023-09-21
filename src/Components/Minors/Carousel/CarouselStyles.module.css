@@ -43,26 +43,30 @@
 
   width: 100%;
   /* overflow-x: hidden; */
-  overflow: auto;
+  overflow: scroll;
 
   white-space: nowrap;
   cursor: grab;
 
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+
+  -webkit-transform: translateZ(0px);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-perspective: 1000;
 }
 
 .carouselContainer::-webkit-scrollbar {
   display: none;
 }
-
+/* 
 .carouselContainer > * {
   -webkit-transform: translateZ(0px);
 }
 
 .carouselContainer > * {
   -webkit-transform: translate3d(0, 0, 0);
-}
+} */
 
 .dragging {
   scroll-behavior: auto;
