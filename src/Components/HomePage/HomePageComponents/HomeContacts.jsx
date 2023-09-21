@@ -16,7 +16,7 @@ function HomeContacts(props) {
             dream website. To contact me, you can use the form or email the
             address below:
           </p>
-          <p className={styles.email}>dorzevhichingis@gmail.com</p>
+          <p className={styles.email}>dorzhievchingis@gmail.com</p>
         </div>
         <div className={styles.contactBlock}>
           <MessageForm btncolor="yellow" darkTheme={props.darkTheme} />
