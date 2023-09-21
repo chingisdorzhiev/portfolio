@@ -43,7 +43,7 @@
 
   width: 100%;
   /* overflow-x: hidden; */
-  overflow: scroll;
+  overflow: auto;
 
   white-space: nowrap;
   cursor: grab;
