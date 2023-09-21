@@ -9,13 +9,10 @@ function Body(props) {
   return (
     <div className={styles.body}>
       <div>
-        <Routes>
-          <Route path="/chingisdorzhiev/" element={<HomePage />} />
-          <Route path="/chingisdorzhiev/about" element={<AboutContainer />} />
-          <Route
-            path="/chingisdorzhiev/projects"
-            element={<MyProjectsContainer />}
-          />
+        <Routes basename="/chingisdorzhiev">
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutContainer />} />
+          <Route path="/projects" element={<MyProjectsContainer />} />
         </Routes>
       </div>
     </div>
