@@ -20,8 +20,8 @@ export const projects = [
       "JavaScript",
     ],
     image: "Portfolio",
-    github: "https://github.com/chingisdorzhiev/chingisdorzhiev",
-    link: "https://chingisdorzhiev.github.io/chingisdorzhiev",
+    github: "https://github.com/chingisdorzhiev/portfolio",
+    link: "https://chingisdorzhiev.github.io/portfolio",
   },
   {
     name: "Quiz App",
