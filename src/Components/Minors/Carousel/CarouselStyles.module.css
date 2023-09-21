@@ -59,6 +59,11 @@
 .carouselContainer::-webkit-scrollbar {
   display: none;
 }
+
+.carouselContainer:after {
+  height: calc(100% + 1px);
+}
+
 /* 
 .carouselContainer > * {
   -webkit-transform: translateZ(0px);
