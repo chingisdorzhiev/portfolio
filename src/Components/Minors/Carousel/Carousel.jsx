@@ -94,10 +94,10 @@ function Carousel(props) {
         onMouseLeave={() => setIsDown(false)}
         onMouseMove={(e) => handleMouseMove(e)}
         //touch events
-        onTouchStart={(e) => handleMouseDown(e)}
-        onTouchEnd={() => setIsDown(false)}
-        onTouchCancel={() => setIsDown(false)}
-        onTouchMove={(e) => handleMouseMove(e)}
+        // onTouchStart={(e) => handleMouseDown(e)}
+        // onTouchEnd={() => setIsDown(false)}
+        // onTouchCancel={() => setIsDown(false)}
+        // onTouchMove={(e) => handleMouseMove(e)}
       >
         {arr}
       </div>
