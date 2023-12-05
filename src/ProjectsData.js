@@ -1,5 +1,47 @@
 export const projects = [
   {
+    name: "Chess",
+    nameRu: "Шахматы",
+    description:
+      "Chess game",
+    descriptionRu:
+      "Шахматы",
+    fullDescription:
+      "Chess game",
+    fullDescriptionRu:
+      "Шахматы",
+    tools: [
+      "TypeScript",
+      "OOP",
+      "React",
+    ],
+    image: "Chess",
+    github: "https://github.com/chingisdorzhiev/chess",
+    link: "https://chingisdorzhiev.github.io/chess",
+  },
+  {
+    name: "Music App",
+    nameRu: "Музыкальное приложение",
+    description:
+      "Music App",
+    descriptionRu:
+      "Музыкальное приложение",
+    fullDescription:
+      "Music App",
+    fullDescriptionRu:
+      "Музыкальное приложение",
+    tools: [
+      "Vite",
+      "React",
+      "React Context API",
+      "SCSS",
+      "Material UI"
+    ],
+    image: "Music",
+    github: "https://github.com/chingisdorzhiev/music-app",
+    link: "https://chingisdorzhiev.github.io/music-app",
+  },
+  {
     name: "Portfolio Website",
     nameRu: "Сайт Портфолио",
     description:
