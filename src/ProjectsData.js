@@ -1,19 +1,44 @@
 export const projects = [
   {
+    name: "Cryptocurrencies application",
+    nameRu: "Криптовалюта",
+    description:
+      "The cryptocurrency application displays a list of the most popular cryptocurrencies, a price chart and detailed information for each cryptocurrency.",
+    descriptionRu:
+      "Приложение о криптовалюте, отображает список  самых популярных криптовалют, график изменения цен и подробную информацию по каждой криптовалюте.",
+    fullDescription:
+      "The cryptocurrency application displays a list of the most popular cryptocurrencies, a price chart and detailed information for each cryptocurrency.",
+    fullDescriptionRu:
+      "Приложение о криптовалюте, отображает список  самых популярных криптовалют, график изменения цен и подробную информацию по каждой криптовалюте.",
+    tools: [
+      "React: hooks, react-route-dom",
+      "Redux Toolkit",
+      "RTK Query",
+      "Rapid API",
+      "Ant Design",
+      "chart.js, react-chart-js-2",
+      "millify",
+      "moment"
+    ],
+    image: "Cryptocurrency",
+    github: "https://github.com/chingisdorzhiev/cryptocurrencies",
+    link: "https://chingisdorzhiev.github.io/cryptocurrencies/",
+  },
+  {
     name: "Chess",
     nameRu: "Шахматы",
     description:
-      "Chess game",
+      "Classic chess, written in TypeScript, the basic logic of moving pieces, eating pieces and highlighting possible moves is implemented, using OOP.",
     descriptionRu:
-      "Шахматы",
+      "Классические шахматы, написаны на TypeScript, реализована базовая логика движения фигур, поедания фигур и подсветка возможных ходов, с применением ООП.",
     fullDescription:
-      "Chess game",
+      "Classic chess, written in TypeScript, the basic logic of moving pieces, eating pieces and highlighting possible moves is implemented, using OOP.",
     fullDescriptionRu:
-      "Шахматы",
+      "Классические шахматы, написаны на TypeScript, реализована базовая логика движения фигур, поедания фигур и подсветка возможных ходов, с применением ООП.",
     tools: [
+      "React",
       "TypeScript",
       "OOP",
-      "React",
     ],
     image: "Chess",
     github: "https://github.com/chingisdorzhiev/chess",
@@ -23,13 +48,13 @@ export const projects = [
     name: "Music App",
     nameRu: "Музыкальное приложение",
     description:
-      "Music App",
+      "Application for playing music. Implemented track search and rewinding.",
     descriptionRu:
-      "Музыкальное приложение",
+      "Приложение по воспроизведению музыку. Реализован поиск треков и перемотка.",
     fullDescription:
-      "Music App",
+      "Application for playing music. Implemented track search and rewinding.",
     fullDescriptionRu:
-      "Музыкальное приложение",
+      "Приложение по воспроизведению музыку. Реализован поиск треков и перемотка.",
     tools: [
       "Vite",
       "React",
