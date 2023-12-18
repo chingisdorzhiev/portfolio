@@ -26,7 +26,13 @@ function About(props) {
               <p>React</p>
             </li>
             <li>
+              <p>Redux</p>
+            </li>
+            <li>
               <p>JavaScript</p>
+            </li>
+            <li>
+              <p>TypeScript</p>
             </li>
             <li>
               <p>HTML</p>
