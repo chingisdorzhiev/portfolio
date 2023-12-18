@@ -11,8 +11,8 @@ function About(props) {
           <h1>ABOUT</h1>
           <p>
             My name is Chingis Dorzhiev. An enthusiastic and detail-oriented
-            Junior Frontend Developer with knowledge in HTML and CSS, JavaScript
-            and React. Seeking to utilize my technical skills and expertise to
+            Frontend Developer with knowledge in HTML and CSS, JavaScript and TypeScript, React and Redux.
+            Seeking to utilize my technical skills and expertise to
             provide value to the employer and contribute to successful projects
             both today and in the future. Aiming to take on new challenges and
             utilize my coding and debugging skills for developing new features
